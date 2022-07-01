@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --apple-red: #E40C2B; 
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color:whitesmoke;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: var(--apple-red);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: var(--apple-red);
+    transition: .4s;
+}
+
+.btn {
+    color: whitesmoke;
+    background-color: var(--apple-red);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+   position: absolute;
+   top: 50%;
+   left: 8%;
+   transform: translateY(-50%);
+   color: whitesmoke;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 4.5em;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 2.2em;
+}
+
+h3 span {
+    color: var(--apple-red);
+    font-size: 1.2em;
+}
+
+
