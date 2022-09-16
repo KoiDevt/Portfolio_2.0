@@ -5,6 +5,12 @@
     font-family:monospace;
 }
 
+body{
+    min-width:1000px; 
+    width: auto !important;  
+    width:1000px;            
+ }
+
 :root {
     --apple-red: #dd13d3; 
 }
@@ -29,13 +35,14 @@ nav {
     padding-right: 3%;
 }
 
-.logo {
+.logo a {
     color:whitesmoke;
-    font-size: 40px;
+    font-size: 4rem;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.logo span {
+.logo a span {
     color: var(--apple-red);
 }
 
@@ -46,19 +53,15 @@ nav ul li {
     position: relative;
 }
 
-nav ul li ::after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: var(--apple-red);
-    position: absolute;
-}
-
 nav ul li a {
     color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+    color: var(--apple-red);
 }
 
 
@@ -75,12 +78,12 @@ h1 {
 }
 
 h2 {
-    font-size: 4.5em;
+    font-size: 5em;
     letter-spacing: 2px;
 }
 
 h3 {
-    font-size: 2.2em;
+    font-size: 2.4em;
 }
 
 h3 span {
@@ -88,7 +91,7 @@ h3 span {
     font-size: 1.2em;
 }
 
-/* .img-box {
+.img-box {
     width: 45%;
     height: 80%;
     position: absolute;
@@ -106,4 +109,4 @@ h3 span {
 
 .img-box:hover .hook {
     right: 50px;
-} */
+}
