@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family:monospace;
 }
 
 :root {
-    --apple-red: #14efff; 
+    --apple-red: #dd13d3; 
 }
 
 .main {
@@ -43,6 +43,15 @@ nav ul li {
     list-style: none;
     display: inline-block;
     padding: 10px 30px;
+    position: relative;
+}
+
+nav ul li ::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: var(--apple-red);
+    position: absolute;
 }
 
 nav ul li a {
@@ -52,10 +61,6 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    color: var(--apple-red);
-    transition: .4s;
-}
 
 .content {
    position: absolute;
@@ -83,7 +88,7 @@ h3 span {
     font-size: 1.2em;
 }
 
-.img-box {
+/* .img-box {
     width: 45%;
     height: 80%;
     position: absolute;
@@ -101,4 +106,4 @@ h3 span {
 
 .img-box:hover .hook {
     right: 50px;
-}
+} */
