@@ -6,7 +6,7 @@
 }
 
 body{
-    min-width:1000px; 
+    min-width:1000px;
     width: auto !important;  
     width:1000px;            
  }
@@ -23,18 +23,12 @@ body{
                 rgba(0,0,0,0.75),
                 rgba(0,0,0,0.75)), 
                 url(assets/rika.jpg);
-    background-size:100%;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
-nav {
-    background: rgba(0,0,0,0.50);
-    display: flex;
-    height: 120px;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 8%;
-    padding-right: 3%;
+div .logo {
+    position: relative;
 }
 
 .logo a {
@@ -42,16 +36,37 @@ nav {
     font-size: 4.3rem;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.6s;
 }
 
 .logo a span {
     color: var(--apple-red);
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav ul li {
     list-style: none;
-    display: inline-block;
-    padding: 10px 10px;
+    position: relative;
 }
 
 nav ul li a {
@@ -59,12 +74,18 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
+    position: relative;
+    margin: 0 15px;
 }
 
 nav ul li a:hover {
     color: var(--apple-red);
 }
 
+nav.sticky {
+    background: rgba(0,0,0,0.75);
+    padding: 5px 100px;
+}
 
 .content {
    position: absolute;
@@ -74,20 +95,20 @@ nav ul li a:hover {
    color: whitesmoke;
 }
 
-h1 {
+.content h1 {
     font-size: 2em;
 }
 
-h2 {
+.content h2 {
     font-size: 5em;
     letter-spacing: 2px;
 }
 
-h3 {
+.content h3 {
     font-size: 2.4em;
 }
 
-h3 span {
+.content h3 span {
     color: var(--apple-red);
     font-size: 1.2em;
 }
@@ -126,4 +147,68 @@ h3 span {
 .socials a i {
     font-size: 3rem;
     padding: 5px 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--apple-red);
+}
+
+
+/*Projects Section*/
+
+.projects {
+    height: 100vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url(assets/port-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projects ul {
+    list-style: none;
+}
+
+#project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-heading {
+    margin-top: 120px;
+}
+
+.project-heading h1 {
+    color: var(--apple-red);
+    font-size: 3rem;
+}
+
+.projects h2 {
+    position: absolute;
+    color: rgb(182, 0, 0);
+    margin-top: 45%;
+    font-size: 7rem;
+}
+
+
+
+@media (max-width: 858px) {
+.img-box {
+    display: none;
+}
 }

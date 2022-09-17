@@ -9,11 +9,10 @@
 
         <div class="main"> 
             <nav>
-                <h2 class="logo"><a href="https://github.com/KoiDevt" target="_blank">Koi.<span>Devt</span>()</a></h2>
+                <h2 class="logo"><a href="https://github.com/KoiDevt" target="_blank">koi.<span>devt</span>()</a></h2>
                 <ul>
                     <li><a href="#">.home()</a></li>
                     <li><a href="#">.projects()</a></li>
-                    <li><a href="#">.services()</a></li>
                     <li><a href="#">.aboutme()</a></li>
                 </ul>
             </nav>
@@ -22,10 +21,7 @@
                 <h2>Koi</h2>
                 <h3>I'm striving for: <br> 
                     .goals(<span class="auto-type"></span>)</h3>
-
-
             </div>
-            
             <div class="socials">
                 <a href="https://github.com/KoiDevt">
                     <i class="fa-brands fa-github"></i>
@@ -35,19 +31,25 @@
                 </a>
                 <a href="https://twitter.com/Koi_NotAfish">
                     <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kelvin-cariaga-870238243/">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>       
+                </a>      
             </div>
-
-           
 
             <div class="img-box">
                 <img src="assets/mashiro.png" alt="mashiro" class="hook">
             </div>
-                
         </div>
+
+        <div class="projects">
+
+            <section id="project">
+                <div class="project-heading">
+                    <h1>.projects()</h1>
+                </div>     
+                <h2>IN PROGRESS..</h2>
+            </section>
+
+        </div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
@@ -56,6 +58,13 @@
                 typeSpeed: 150,
                 backSpeed: 50,
                 loop: true
+            })
+        </script>
+
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var nav = document.querySelector("nav");
+                nav.classList.toggle("sticky", window.scrollY > 0);
             })
         </script>
 
