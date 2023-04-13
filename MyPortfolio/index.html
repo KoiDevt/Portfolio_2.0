@@ -41,10 +41,19 @@
             
             <!--Project Section-->
             <div class="projects">
-                <div class="contents">
-                    <a href="#">IN</a>
-                    <a href="#">PROGRESS</a>
+
+                <div id="text">
+                    <div class="line">
+                        <a id="channel-link-1" class="word fancy" href="#">IN </a>
+                        <a id="channel-link-2" class="word fancy" href="#">PROGRESS </a>
+                    </div>
+                    <div class="line">
+                        <a id="channel-link-3" class="word fancy" href="#">BE </a>
+                        <a id="channel-link-4" class="word fancy" href="#">BACK </a>
+                        <a id="channel-link-5" class="word fancy" href="#">SOON </a>
+                    </div>
                 </div>
+
             </div>
         </div>
        
@@ -66,7 +75,30 @@
                 nav.classList.toggle("sticky", window.scrollY > 0);
             })
         </script>
+        
+        <script> //credits to Hyperplexed for the idea!
+            const enchance = id => {
+                const element = document.getElementById(id),
+                    text = element.innerText.split("");
 
+                element.innerText = "";
+
+                text.forEach(letter => {
+                    const span = document.createElement("span");
+
+                    span.className = "letter";
+
+                    span.innerText = letter;
+
+                    element.appendChild(span);
+                });
+            }
+        enchance("channel-link-1")
+        enchance("channel-link-2")
+        enchance("channel-link-3")
+        enchance("channel-link-4")
+        enchance("channel-link-5")
+        </script>
 
     </body>
 </html>
