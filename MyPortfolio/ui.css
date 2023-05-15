@@ -162,7 +162,7 @@ nav.sticky {
 
 /*Projects Section*/
 
-.projects {
+/* .projects {
     height: 100vh;
     width: 100%;
     background-image: 
@@ -201,7 +201,7 @@ nav.sticky {
 
 .fancy:hover > .letter {
     transition-duration: 700ms;
-}
+} */
 
 /*aboutme*/
 /* .aboutme {
@@ -216,7 +216,7 @@ nav.sticky {
     height: auto;
     width: 100%;
     background-color: #0d0016;
-    padding-top: 30px;
+    padding-top: 20px;
     color: white;
 }
 
