@@ -203,6 +203,65 @@ nav.sticky {
     transition-duration: 700ms;
 }
 
+/*aboutme*/
+/* .aboutme {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/MyPortfolio/assets/port-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.cc {
+    height: auto;
+    width: 100%;
+    background-color: #0d0016;
+    padding-top: 30px;
+    color: white;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.terms a {
+    color: azure;
+    font-size: 15px;
+}
+
+.terms h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.footer-socials li {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-socials i {
+    font-size: 30px;
+}
+
+
 /*animators*/
 
 .fancy:hover > .letter:nth-child(1) {
