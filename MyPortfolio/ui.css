@@ -7,7 +7,13 @@
 
 :root {
     --apple-red: #dd13d3;
-    --socials: #ff18f3;  
+    --socials: #ff18f3;
+    --bg-blue: #1F242D;
+    --footer-dblue: #14171d;  
+}
+
+html {
+    scroll-snap-type: y mandatory;
 }
 
 .main {
@@ -19,6 +25,7 @@
                 url(assets/rika.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    scroll-snap-align: start;
 }
 
 div .logo {
@@ -46,7 +53,7 @@ nav {
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    padding: 40px 100px;
+    padding: 70px 100px; /*40px 100px*/
     transition: 0.5s;
     z-index: 1000;
 }
@@ -72,12 +79,14 @@ nav ul li a {
     margin: 0 15px;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--apple-red);
 }
 
 nav.sticky {
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.50);
+    backdrop-filter: blur(10px);
     padding: 5px 100px;
 }
 
@@ -162,62 +171,24 @@ nav.sticky {
 
 /*Projects Section*/
 
-/* .projects {
+.projects {
     height: 100vh;
     width: 100%;
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-    url(assets/port-bg.png);
+    background: var(--bg-blue);
     background-size: cover;
     background-position: center;
+    scroll-snap-align: start;
 }
 
-.projects #text {
-    text-align: center;
-    width: 100%;
-    padding-top: 320px;
-}
-
-.projects a {
-    text-decoration: none;
-    font-size: 6rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    letter-spacing: 5px;
-}
-
-.word {
-    color: white;
-}
-
-#text:has(.fancy:hover) .word:not(.fancy:hover) {
-    opacity: 0.1;
-}
-
-.fancy > .letter {
-    display: inline-block;
-    transition: transform 350ms ease;
-}
-
-.fancy:hover > .letter {
-    transition-duration: 700ms;
-} */
-
-/*aboutme*/
-/* .aboutme {
-    height: 100vh;
-    width: 100%;
-    background-image: url(/MyPortfolio/assets/port-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 .cc {
     height: auto;
     width: 100%;
-    background-color: #0d0016;
-    padding-top: 20px;
+    background-color: var(--footer-dblue);
+    backdrop-filter: blur(10px); /* nothing to blur for now */
+    padding-top: 20px;  
     color: white;
+    scroll-snap-align: start;
 }
 
 .terms {
@@ -259,41 +230,7 @@ nav.sticky {
 
 .footer-socials i {
     font-size: 30px;
-}
-
-
-/*animators*/
-
-.fancy:hover > .letter:nth-child(1) {
-    transform: translate(-10%, 10%) rotate(-10deg);
-}
-
-.fancy:hover > .letter:nth-child(2) {
-    transform: translate(-10%, -30%) rotate(8deg);
-}
-
-.fancy:hover > .letter:nth-child(3) {
-    transform: translate(-10%, -10%) rotate(-12deg);
-}
-
-.fancy:hover > .letter:nth-child(4) {
-    transform: translate(10%, 10%) rotate(9deg);
-}
-
-.fancy:hover > .letter:nth-child(5) {
-    transform: translate(10%, 10%) rotate(-8deg);
-}
-
-.fancy:hover > .letter:nth-child(6) {
-    transform: translate(10%, -15%) rotate(8deg);
-}
-
-.fancy:hover > .letter:nth-child(7) {
-    transform: translate(10%, 19%) rotate(-8deg);
-}
-
-.fancy:hover > .letter:nth-child(8) {
-    transform: translate(10%, 10%) rotate(8deg);
+    color: var(--apple-red);
 }
 
 @media (max-width: 858px) {
